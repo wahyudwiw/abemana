@@ -54,7 +54,6 @@ const ADDRESS =
   "ABEMANA Wedding Organizer, Ngaliyan, Semarang";
 
 const LOGO_URL = "/logo-abemana.png";
-
 const MUSIC_URL = "/wedding-music.mp3";
 
 /* =========================================================
@@ -62,34 +61,13 @@ const MUSIC_URL = "/wedding-music.mp3";
 ========================================================= */
 
 const navigation = [
-  {
-    name: "Beranda",
-    href: "#home",
-  },
-  {
-    name: "Tentang",
-    href: "#about",
-  },
-  {
-    name: "Layanan",
-    href: "#services",
-  },
-  {
-    name: "Paket",
-    href: "#packages",
-  },
-  {
-    name: "Galeri",
-    href: "#gallery",
-  },
-  {
-    name: "Testimoni",
-    href: "#testimonials",
-  },
-  {
-    name: "Lokasi",
-    href: "#location",
-  },
+  { name: "Beranda", href: "#home" },
+  { name: "Tentang", href: "#about" },
+  { name: "Layanan", href: "#services" },
+  { name: "Paket", href: "#packages" },
+  { name: "Galeri", href: "#gallery" },
+  { name: "Testimoni", href: "#testimonials" },
+  { name: "Lokasi", href: "#location" },
 ];
 
 /* =========================================================
@@ -103,35 +81,30 @@ const services = [
     description:
       "Pendampingan dan koordinasi mulai dari persiapan, vendor, meeting hingga pelaksanaan acara di hari-H.",
   },
-
   {
     icon: Flower2,
     title: "Dekorasi",
     description:
       "Konsep dekorasi pelaminan dan area acara yang disesuaikan dengan tema serta karakter pasangan.",
   },
-
   {
     icon: WandSparkles,
     title: "Makeup & Attire",
     description:
       "Pilihan makeup pengantin, busana akad, resepsi dan kebutuhan styling keluarga.",
   },
-
   {
     icon: Camera,
     title: "Foto & Video",
     description:
       "Dokumentasi profesional berupa foto, video dan cinematic wedding untuk mengabadikan setiap momen.",
   },
-
   {
     icon: Music2,
     title: "Entertainment",
     description:
       "Pilihan singer, keyboard, saxophone dan hiburan lainnya untuk menciptakan suasana yang lebih berkesan.",
   },
-
   {
     icon: Utensils,
     title: "Catering",
@@ -150,10 +123,8 @@ const woPackages = [
     guest: "100 - 200 Undangan",
     price: "Rp5,9 Juta",
     popular: false,
-
     description:
       "Pilihan praktis untuk wedding intimate hingga medium dengan kebutuhan koordinasi yang tetap terarah.",
-
     features: [
       "5 Crew + HT Crew + Kostum WO",
       "Unlimited koordinasi pra acara",
@@ -166,16 +137,13 @@ const woPackages = [
       "Free transport area Semarang",
     ],
   },
-
   {
     name: "Gold",
     guest: "200 - 350 Undangan",
     price: "Rp6,9 Juta",
     popular: true,
-
     description:
       "Paket favorit dengan jumlah crew lebih lengkap untuk membantu koordinasi wedding berskala menengah.",
-
     features: [
       "7 Crew + HT Crew + Kostum WO",
       "Unlimited koordinasi pra acara",
@@ -192,16 +160,13 @@ const woPackages = [
       "Free transport area Semarang",
     ],
   },
-
   {
     name: "Platinum",
     guest: "350 - 1000 Undangan",
     price: "Rp9 Juta",
     popular: false,
-
     description:
       "Dirancang untuk wedding dengan jumlah tamu lebih besar serta kebutuhan koordinasi yang lebih kompleks.",
-
     features: [
       "12 Crew + HT Crew + Kostum WO",
       "Unlimited koordinasi pra acara",
@@ -222,24 +187,19 @@ const woPackages = [
 ];
 
 /* =========================================================
-   ALL IN PACKAGE
+   ALL IN
 ========================================================= */
 
 const allInPackage = {
   name: "Wedding All In Gedung",
-
   price: "Rp41 Juta",
-
   title:
     "Satu paket untuk kebutuhan wedding yang lebih lengkap.",
-
   description:
     "Pilihan untuk pasangan yang ingin persiapan lebih praktis. Wedding Organizer, dekorasi, makeup, dokumentasi, entertainment, venue hingga catering dapat dikoordinasikan bersama ABEMANA.",
-
   categories: [
     {
       title: "Wedding Organizer",
-
       items: [
         "Crew profesional",
         "Wedding guide book",
@@ -253,10 +213,8 @@ const allInPackage = {
         "Dokumentasi BTS by crew",
       ],
     },
-
     {
       title: "Dekorasi",
-
       items: [
         "Dekorasi pelaminan",
         "Fresh & artificial flower",
@@ -269,10 +227,8 @@ const allInPackage = {
         "Welcome gate",
       ],
     },
-
     {
       title: "Makeup & Attire",
-
       items: [
         "Makeup pengantin",
         "Busana akad & resepsi",
@@ -284,10 +240,8 @@ const allInPackage = {
         "Free retouchup",
       ],
     },
-
     {
       title: "Foto & Video",
-
       items: [
         "2 fotografer",
         "1 videografer",
@@ -298,10 +252,8 @@ const allInPackage = {
         "Video cinematic wedding clip",
       ],
     },
-
     {
       title: "Entertainment",
-
       items: [
         "Saxophone",
         "Singer",
@@ -309,20 +261,16 @@ const allInPackage = {
         "Gitar",
       ],
     },
-
     {
       title: "Venue / Gedung",
-
       items: [
         "Pilihan venue rekanan ABEMANA",
         "Menyesuaikan ketersediaan",
         "Konsultasi venue sesuai kebutuhan",
       ],
     },
-
     {
       title: "MC Akad & Resepsi",
-
       items: [
         "MC akad",
         "MC resepsi",
@@ -330,10 +278,8 @@ const allInPackage = {
         "Request khusus",
       ],
     },
-
     {
       title: "Catering",
-
       items: [
         "Catering hingga 1200 porsi",
         "Buffet utama",
@@ -354,93 +300,73 @@ const gallery = [
   {
     image:
       "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90",
-
     title: "Garden Wedding",
     category: "Outdoor",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=90",
-
     title: "Wedding Ceremony",
     category: "Ceremony",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=90",
-
     title: "Elegant Reception",
     category: "Reception",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=90",
-
     title: "Wedding Decoration",
     category: "Decoration",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=90",
-
     title: "Beautiful Moment",
     category: "Wedding Story",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1200&q=90",
-
     title: "Romantic Celebration",
     category: "Wedding Moment",
   },
 ];
 
 /* =========================================================
-   TESTIMONIALS
+   TESTIMONIAL
 ========================================================= */
 
 const testimonials = [
   {
     name: "Alya & Fikri",
     event: "Wedding • Semarang",
-
     text:
       "Tim ABEMANA sangat membantu dari awal persiapan sampai acara selesai. Semua terasa lebih terarah dan kami bisa menikmati hari pernikahan dengan tenang.",
   },
-
   {
     name: "Nadia & Reza",
     event: "Wedding • Semarang",
-
     text:
       "Koordinasi timnya rapi dan komunikatif. Saat hari-H semua berjalan sesuai rundown dan keluarga juga sangat terbantu.",
   },
-
   {
     name: "Salsa & Dimas",
     event: "Wedding • Semarang",
-
     text:
       "Tim sangat sigap ketika ada perubahan di hari acara. Pelayanannya ramah dan koordinasinya benar-benar membantu.",
   },
-
   {
     name: "Rani & Bagas",
     event: "Wedding • Semarang",
-
     text:
       "Persiapan jadi lebih tenang karena tim ABEMANA membantu banyak hal dari meeting hingga koordinasi vendor.",
   },
-
   {
     name: "Dinda & Arga",
     event: "Wedding • Semarang",
-
     text:
       "Terima kasih ABEMANA sudah membantu wedding kami. Timnya responsif dan sangat membantu keluarga selama acara.",
   },
@@ -453,7 +379,7 @@ const testimonials = [
 const fadeUp = {
   hidden: {
     opacity: 0,
-    y: 24,
+    y: 28,
   },
 
   show: {
@@ -462,12 +388,41 @@ const fadeUp = {
 
     transition: {
       duration: 0.65,
-      ease: [
-        0.25,
-        0.1,
-        0.25,
-        1,
-      ],
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+};
+
+const fadeLeft = {
+  hidden: {
+    opacity: 0,
+    x: -35,
+  },
+
+  show: {
+    opacity: 1,
+    x: 0,
+
+    transition: {
+      duration: 0.7,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+};
+
+const fadeRight = {
+  hidden: {
+    opacity: 0,
+    x: 35,
+  },
+
+  show: {
+    opacity: 1,
+    x: 0,
+
+    transition: {
+      duration: 0.7,
+      ease: [0.25, 0.1, 0.25, 1],
     },
   },
 };
@@ -477,7 +432,8 @@ const stagger = {
 
   show: {
     transition: {
-      staggerChildren: 0.08,
+      staggerChildren: 0.1,
+      delayChildren: 0.05,
     },
   },
 };
@@ -511,22 +467,20 @@ export default function App() {
       phone: "",
       date: "",
       location: "",
-      packageName:
-        "Gold",
+      packageName: "Gold",
       concept: "",
     });
 
   /* ========================================================
-     NAVBAR
+     NAVBAR SCROLL
   ======================================================== */
 
   useEffect(() => {
-    const handleScroll =
-      () => {
-        setScrolled(
-          window.scrollY > 15
-        );
-      };
+    const handleScroll = () => {
+      setScrolled(
+        window.scrollY > 15
+      );
+    };
 
     handleScroll();
 
@@ -543,7 +497,7 @@ export default function App() {
   }, []);
 
   /* ========================================================
-     MUSIC
+     MUSIC AUTOPLAY + FALLBACK
   ======================================================== */
 
   useEffect(() => {
@@ -555,8 +509,7 @@ export default function App() {
     audio.volume = 0.12;
     audio.loop = true;
 
-    let started =
-      false;
+    let started = false;
 
     const playMusic =
       async () => {
@@ -576,9 +529,8 @@ export default function App() {
           cleanup();
         } catch {
           /*
-            Browser dapat memblokir autoplay bersuara.
-            Jika diblokir, musik akan dicoba lagi
-            saat interaksi pertama.
+            Browser dapat memblokir autoplay audio.
+            Akan dicoba lagi saat interaksi pertama.
           */
         }
       };
@@ -590,43 +542,30 @@ export default function App() {
 
     const cleanup =
       () => {
-        window.removeEventListener(
+        document.removeEventListener(
           "pointerdown",
           handleInteraction
         );
 
-        window.removeEventListener(
+        document.removeEventListener(
           "touchstart",
           handleInteraction
         );
 
-        window.removeEventListener(
+        document.removeEventListener(
           "keydown",
-          handleInteraction
-        );
-
-        window.removeEventListener(
-          "scroll",
           handleInteraction
         );
       };
 
-    /*
-      LANGSUNG COBA PLAY
-    */
-
     playMusic();
 
-    /*
-      FALLBACK
-    */
-
-    window.addEventListener(
+    document.addEventListener(
       "pointerdown",
       handleInteraction
     );
 
-    window.addEventListener(
+    document.addEventListener(
       "touchstart",
       handleInteraction,
       {
@@ -634,18 +573,9 @@ export default function App() {
       }
     );
 
-    window.addEventListener(
+    document.addEventListener(
       "keydown",
       handleInteraction
-    );
-
-    window.addEventListener(
-      "scroll",
-      handleInteraction,
-      {
-        passive: true,
-        once: true,
-      }
     );
 
     return cleanup;
@@ -659,7 +589,6 @@ export default function App() {
     (event) => {
       setForm({
         ...form,
-
         [event.target.name]:
           event.target.value,
       });
@@ -739,7 +668,6 @@ Terima kasih.
         text-[#29231f]
       "
     >
-
       {/* ====================================================
           AUDIO
       ==================================================== */}
@@ -757,7 +685,22 @@ Terima kasih.
           NAVBAR
       ==================================================== */}
 
-      <header
+      <motion.header
+        initial={{
+          y: -70,
+          opacity: 0,
+        }}
+
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+
+        transition={{
+          duration: 0.7,
+          ease: "easeOut",
+        }}
+
         className={`
           fixed
           inset-x-0
@@ -772,7 +715,7 @@ Terima kasih.
                 glass
                 border-b
                 border-[#e9ddd6]
-                shadow-sm
+                shadow-[0_8px_30px_rgba(60,40,30,0.05)]
               `
               : `
                 bg-[#fffdfa]/95
@@ -787,16 +730,11 @@ Terima kasih.
             h-[64px]
             items-center
             justify-between
-
             sm:h-20
           "
         >
-
-          {/* LOGO */}
-
           <a
             href="#home"
-
             className="
               flex
               items-center
@@ -805,8 +743,12 @@ Terima kasih.
           >
             <motion.div
               whileHover={{
-                scale:
-                  1.05,
+                scale: 1.08,
+                rotate: 2,
+              }}
+
+              whileTap={{
+                scale: 0.95,
               }}
 
               className="
@@ -817,7 +759,6 @@ Terima kasih.
                 rounded-full
                 bg-white
                 shadow-sm
-
                 sm:h-12
                 sm:w-12
               "
@@ -827,7 +768,7 @@ Terima kasih.
                   LOGO_URL
                 }
 
-                alt="Logo ABEMANA Wedding Organizer"
+                alt="Logo ABEMANA"
 
                 className="
                   h-full
@@ -844,8 +785,6 @@ Terima kasih.
                   text-[16px]
                   font-semibold
                   leading-none
-                  tracking-[0.03em]
-
                   sm:text-[20px]
                 "
               >
@@ -860,7 +799,6 @@ Terima kasih.
                   uppercase
                   tracking-[0.2em]
                   text-[#987361]
-
                   sm:text-[7px]
                 "
               >
@@ -869,14 +807,11 @@ Terima kasih.
             </div>
           </a>
 
-          {/* DESKTOP */}
-
           <nav
             className="
               hidden
               items-center
               gap-7
-
               lg:flex
             "
           >
@@ -884,7 +819,7 @@ Terima kasih.
               (
                 item
               ) => (
-                <a
+                <motion.a
                   key={
                     item.name
                   }
@@ -892,6 +827,10 @@ Terima kasih.
                   href={
                     item.href
                   }
+
+                  whileHover={{
+                    y: -2,
+                  }}
 
                   className="
                     relative
@@ -915,7 +854,7 @@ Terima kasih.
                   {
                     item.name
                   }
-                </a>
+                </motion.a>
               )
             )}
           </nav>
@@ -924,12 +863,12 @@ Terima kasih.
             href="#consultation"
 
             whileHover={{
-              y: -2,
+              y: -3,
+              scale: 1.02,
             }}
 
             whileTap={{
-              scale:
-                0.98,
+              scale: 0.97,
             }}
 
             className="
@@ -943,23 +882,22 @@ Terima kasih.
               text-sm
               font-semibold
               !text-white
-
               lg:flex
             "
           >
             Konsultasi
 
             <ArrowUpRight
-              size={
-                16
-              }
+              size={16}
             />
           </motion.a>
 
-          {/* MOBILE MENU */}
-
-          <button
+          <motion.button
             type="button"
+
+            whileTap={{
+              scale: 0.9,
+            }}
 
             onClick={() =>
               setMobileMenu(
@@ -976,24 +914,15 @@ Terima kasih.
               border
               border-[#ddd0c8]
               bg-white
-
               lg:hidden
             "
           >
             {mobileMenu ? (
-              <X
-                size={
-                  18
-                }
-              />
+              <X size={18} />
             ) : (
-              <Menu
-                size={
-                  18
-                }
-              />
+              <Menu size={18} />
             )}
-          </button>
+          </motion.button>
         </div>
 
         <AnimatePresence>
@@ -1001,7 +930,7 @@ Terima kasih.
             <motion.div
               initial={{
                 opacity: 0,
-                y: -8,
+                y: -15,
               }}
 
               animate={{
@@ -1011,14 +940,17 @@ Terima kasih.
 
               exit={{
                 opacity: 0,
-                y: -8,
+                y: -15,
+              }}
+
+              transition={{
+                duration: 0.25,
               }}
 
               className="
                 glass
                 border-t
                 border-[#e8ddd5]
-
                 lg:hidden
               "
             >
@@ -1033,9 +965,10 @@ Terima kasih.
               >
                 {navigation.map(
                   (
-                    item
+                    item,
+                    index
                   ) => (
-                    <a
+                    <motion.a
                       key={
                         item.name
                       }
@@ -1043,6 +976,22 @@ Terima kasih.
                       href={
                         item.href
                       }
+
+                      initial={{
+                        opacity: 0,
+                        x: -10,
+                      }}
+
+                      animate={{
+                        opacity: 1,
+                        x: 0,
+                      }}
+
+                      transition={{
+                        delay:
+                          index *
+                          0.04,
+                      }}
 
                       onClick={() =>
                         setMobileMenu(
@@ -1056,14 +1005,13 @@ Terima kasih.
                         py-3
                         text-sm
                         font-medium
-
                         hover:bg-[#f4ebe5]
                       "
                     >
                       {
                         item.name
                       }
-                    </a>
+                    </motion.a>
                   )
                 )}
 
@@ -1094,7 +1042,7 @@ Terima kasih.
             </motion.div>
           )}
         </AnimatePresence>
-      </header>
+      </motion.header>
 
       {/* ====================================================
           HERO
@@ -1107,51 +1055,90 @@ Terima kasih.
           relative
           overflow-hidden
           pt-[64px]
-
           sm:pt-20
         "
       >
+        {/* moving blob */}
+
         <motion.div
           animate={{
             x: [
-              0,
-              20,
-              0,
+              -20,
+              35,
+              -20,
             ],
 
             y: [
               0,
-              -10,
+              -25,
               0,
+            ],
+
+            scale: [
+              1,
+              1.1,
+              1,
             ],
           }}
 
           transition={{
-            duration:
-              10,
-
-            repeat:
-              Infinity,
-
-            ease:
-              "easeInOut",
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
           }}
 
           className="
+            pointer-events-none
             absolute
-            -left-28
-            top-20
-            h-[280px]
-            w-[280px]
+            -left-32
+            top-24
+            h-[330px]
+            w-[330px]
             rounded-full
-            bg-[#dec8bb]/30
-            blur-3xl
+            bg-[#dcbfb0]/25
+            blur-[85px]
+          "
+        />
+
+        <motion.div
+          animate={{
+            x: [
+              20,
+              -30,
+              20,
+            ],
+
+            y: [
+              -20,
+              30,
+              -20,
+            ],
+          }}
+
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+
+          className="
+            pointer-events-none
+            absolute
+            -right-40
+            bottom-10
+            h-[370px]
+            w-[370px]
+            rounded-full
+            bg-[#eadbd2]/60
+            blur-[100px]
           "
         />
 
         <div
           className="
             container-main
+            relative
+            z-10
             grid
             gap-9
             pb-14
@@ -1167,22 +1154,19 @@ Terima kasih.
           "
         >
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 20,
-            }}
+            variants={
+              stagger
+            }
 
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
+            initial="hidden"
 
-            transition={{
-              duration:
-                0.7,
-            }}
+            animate="show"
           >
-            <div
+            <motion.div
+              variants={
+                fadeUp
+              }
+
               className="
                 mb-5
                 inline-flex
@@ -1192,6 +1176,7 @@ Terima kasih.
                 bg-white/75
                 px-3.5
                 py-2
+                shadow-sm
               "
             >
               <span
@@ -1201,15 +1186,18 @@ Terima kasih.
                   uppercase
                   tracking-[0.17em]
                   text-[#8f6856]
-
                   sm:text-[9px]
                 "
               >
                 Wedding Organizer Semarang
               </span>
-            </div>
+            </motion.div>
 
-            <h2
+            <motion.h2
+              variants={
+                fadeUp
+              }
+
               className="
                 font-display
                 max-w-[350px]
@@ -1237,9 +1225,13 @@ Terima kasih.
                 {" "}
                 indah dan berkesan.
               </span>
-            </h2>
+            </motion.h2>
 
-            <p
+            <motion.p
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-5
                 max-w-xl
@@ -1258,14 +1250,17 @@ Terima kasih.
               detail terasa lebih
               terarah, nyaman dan
               sesuai rencana.
-            </p>
+            </motion.p>
 
-            <div
+            <motion.div
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-6
                 grid
                 gap-3
-
                 sm:flex
               "
             >
@@ -1273,12 +1268,12 @@ Terima kasih.
                 href="#packages"
 
                 whileHover={{
-                  y: -2,
+                  y: -3,
+                  scale: 1.015,
                 }}
 
                 whileTap={{
-                  scale:
-                    0.98,
+                  scale: 0.97,
                 }}
 
                 className="
@@ -1293,14 +1288,13 @@ Terima kasih.
                   text-sm
                   font-semibold
                   !text-white
+                  shadow-lg
                 "
               >
                 Lihat Paket
 
                 <ArrowRight
-                  size={
-                    15
-                  }
+                  size={15}
                 />
               </motion.a>
 
@@ -1308,12 +1302,13 @@ Terima kasih.
                 href="#consultation"
 
                 whileHover={{
-                  y: -2,
+                  y: -3,
+                  backgroundColor:
+                    "#faf6f3",
                 }}
 
                 whileTap={{
-                  scale:
-                    0.98,
+                  scale: 0.97,
                 }}
 
                 className="
@@ -1332,16 +1327,18 @@ Terima kasih.
                 "
               >
                 <CalendarDays
-                  size={
-                    15
-                  }
+                  size={15}
                 />
 
                 Konsultasi Gratis
               </motion.a>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-8
                 grid
@@ -1364,47 +1361,61 @@ Terima kasih.
                 value="30+"
                 label="Vendor Partner"
               />
-            </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
             initial={{
               opacity: 0,
-              y: 25,
+              x: 35,
             }}
 
             animate={{
               opacity: 1,
-              y: 0,
+              x: 0,
             }}
 
             transition={{
-              duration:
-                0.8,
+              duration: 0.85,
+              delay: 0.15,
+            }}
 
-              delay:
-                0.15,
+            whileHover={{
+              y: -5,
             }}
 
             className="
+              group
               relative
               overflow-hidden
               rounded-[30px]
               shadow-[0_24px_60px_rgba(60,40,30,0.14)]
             "
           >
-            <img
+            <motion.img
               src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90"
 
               alt="ABEMANA Wedding"
+
+              animate={{
+                scale: [
+                  1,
+                  1.035,
+                  1,
+                ],
+              }}
+
+              transition={{
+                duration: 12,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
 
               className="
                 h-[400px]
                 w-full
                 object-cover
-
                 sm:h-[600px]
-
                 lg:h-[680px]
               "
             />
@@ -1414,13 +1425,28 @@ Terima kasih.
                 absolute
                 inset-0
                 bg-gradient-to-t
-                from-black/50
+                from-black/55
                 via-transparent
                 to-transparent
               "
             />
 
-            <div
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+
+              transition={{
+                delay: 0.6,
+                duration: 0.6,
+              }}
+
               className="
                 absolute
                 bottom-6
@@ -1450,7 +1476,7 @@ Terima kasih.
                 Your Moment,
                 Our Care
               </h3>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -1464,7 +1490,6 @@ Terima kasih.
 
         className="
           py-20
-
           sm:py-28
         "
       >
@@ -1485,6 +1510,7 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.2,
             }}
 
             variants={
@@ -1495,49 +1521,76 @@ Terima kasih.
               grid
               grid-cols-2
               gap-3
-
               sm:gap-4
             "
           >
-            <motion.img
+            <motion.div
               variants={
-                fadeUp
+                fadeLeft
               }
 
-              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=90"
-
-              alt="Wedding Decoration"
+              whileHover={{
+                y: -6,
+              }}
 
               className="
-                h-[340px]
-                w-full
+                overflow-hidden
                 rounded-[26px]
-                object-cover
-
-                sm:h-[460px]
               "
-            />
+            >
+              <img
+                src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=90"
 
-            <motion.img
+                alt="Wedding Decoration"
+
+                className="
+                  h-[340px]
+                  w-full
+                  object-cover
+                  transition-transform
+                  duration-700
+
+                  hover:scale-105
+
+                  sm:h-[460px]
+                "
+              />
+            </motion.div>
+
+            <motion.div
               variants={
-                fadeUp
+                fadeRight
               }
 
-              src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=90"
-
-              alt="Wedding Venue"
+              whileHover={{
+                y: -6,
+              }}
 
               className="
                 mt-8
-                h-[340px]
-                w-full
+                overflow-hidden
                 rounded-[26px]
-                object-cover
-
                 sm:mt-12
-                sm:h-[460px]
               "
-            />
+            >
+              <img
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=90"
+
+                alt="Wedding Venue"
+
+                className="
+                  h-[340px]
+                  w-full
+                  object-cover
+                  transition-transform
+                  duration-700
+
+                  hover:scale-105
+
+                  sm:h-[460px]
+                "
+              />
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -1547,17 +1600,28 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.2,
             }}
 
             variants={
-              fadeUp
+              stagger
             }
           >
-            <SectionTag>
-              Tentang ABEMANA
-            </SectionTag>
+            <motion.div
+              variants={
+                fadeUp
+              }
+            >
+              <SectionTag>
+                Tentang ABEMANA
+              </SectionTag>
+            </motion.div>
 
-            <h2
+            <motion.h2
+              variants={
+                fadeUp
+              }
+
               className="
                 font-display
                 mt-4
@@ -1581,9 +1645,13 @@ Terima kasih.
                 {" "}
                 ABEMANA.
               </span>
-            </h2>
+            </motion.h2>
 
-            <p
+            <motion.p
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-6
                 text-sm
@@ -1601,9 +1669,13 @@ Terima kasih.
               persiapan, koordinasi
               vendor hingga
               pelaksanaan acara.
-            </p>
+            </motion.p>
 
-            <div
+            <motion.div
+              variants={
+                stagger
+              }
+
               className="
                 mt-8
                 space-y-5
@@ -1611,28 +1683,22 @@ Terima kasih.
             >
               <AboutPoint
                 number="01"
-
                 title="Sesuai Kebutuhan"
-
                 description="Konsep dan layanan dapat disesuaikan dengan kebutuhan pasangan."
               />
 
               <AboutPoint
                 number="02"
-
                 title="Persiapan Lebih Terarah"
-
                 description="Setiap tahapan dipersiapkan melalui timeline dan koordinasi yang jelas."
               />
 
               <AboutPoint
                 number="03"
-
                 title="Pendampingan Hari-H"
-
                 description="Tim ABEMANA membantu memastikan acara berjalan sesuai rundown."
               />
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -1645,15 +1711,45 @@ Terima kasih.
         id="services"
 
         className="
+          relative
+          overflow-hidden
           bg-[#f7f1ed]
           py-20
-
           sm:py-28
         "
       >
+        <motion.div
+          animate={{
+            scale: [
+              1,
+              1.1,
+              1,
+            ],
+          }}
+
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+
+          className="
+            pointer-events-none
+            absolute
+            -right-32
+            top-20
+            h-[300px]
+            w-[300px]
+            rounded-full
+            bg-[#e1cabc]/40
+            blur-[100px]
+          "
+        />
+
         <div
           className="
             container-main
+            relative
           "
         >
           <SectionHeader
@@ -1671,6 +1767,7 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.1,
             }}
 
             variants={
@@ -1683,7 +1780,6 @@ Terima kasih.
               gap-4
 
               sm:grid-cols-2
-
               lg:grid-cols-3
             "
           >
@@ -1715,7 +1811,6 @@ Terima kasih.
 
         className="
           py-20
-
           sm:py-28
         "
       >
@@ -1732,14 +1827,10 @@ Terima kasih.
             description="Pilih layanan Wedding Organizer atau paket All In sesuai skala, konsep dan kebutuhan acara."
           />
 
-          {/* =================================================
-              WO INTRO — SUDAH DIRAPIKAN
-          ================================================= */}
-
           <motion.div
             initial={{
               opacity: 0,
-              y: 20,
+              y: 30,
             }}
 
             whileInView={{
@@ -1749,6 +1840,11 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.2,
+            }}
+
+            transition={{
+              duration: 0.65,
             }}
 
             className="
@@ -1758,6 +1854,7 @@ Terima kasih.
               border-[#eadfd8]
               bg-[#faf6f3]
               p-6
+              shadow-[0_12px_40px_rgba(70,50,40,0.04)]
 
               sm:p-8
 
@@ -1806,7 +1903,6 @@ Terima kasih.
             <div
               className="
                 mt-5
-
                 lg:mt-0
               "
             >
@@ -1832,7 +1928,19 @@ Terima kasih.
                 terkoordinasi.
               </p>
 
-              <div
+              <motion.div
+                initial="hidden"
+
+                whileInView="show"
+
+                viewport={{
+                  once: true,
+                }}
+
+                variants={
+                  stagger
+                }
+
                 className="
                   mt-5
                   flex
@@ -1849,10 +1957,18 @@ Terima kasih.
                   (
                     item
                   ) => (
-                    <span
+                    <motion.span
                       key={
                         item
                       }
+
+                      variants={
+                        fadeUp
+                      }
+
+                      whileHover={{
+                        y: -2,
+                      }}
 
                       className="
                         rounded-full
@@ -1869,14 +1985,12 @@ Terima kasih.
                       {
                         item
                       }
-                    </span>
+                    </motion.span>
                   )
                 )}
-              </div>
+              </motion.div>
             </div>
           </motion.div>
-
-          {/* WO CARDS */}
 
           <motion.div
             initial="hidden"
@@ -1885,6 +1999,7 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.1,
             }}
 
             variants={
@@ -1895,7 +2010,6 @@ Terima kasih.
               mt-7
               grid
               gap-5
-
               lg:grid-cols-3
             "
           >
@@ -1920,23 +2034,26 @@ Terima kasih.
             )}
           </motion.div>
 
-          {/* =================================================
-              ALL IN
-          ================================================= */}
-
           <motion.div
             initial={{
               opacity: 0,
-              y: 25,
+              y: 35,
+              scale: 0.98,
             }}
 
             whileInView={{
               opacity: 1,
               y: 0,
+              scale: 1,
             }}
 
             viewport={{
               once: true,
+              amount: 0.1,
+            }}
+
+            transition={{
+              duration: 0.75,
             }}
 
             className="
@@ -2018,10 +2135,16 @@ Terima kasih.
                     (
                       item
                     ) => (
-                      <span
+                      <motion.span
                         key={
                           item
                         }
+
+                        whileHover={{
+                          y: -2,
+                          backgroundColor:
+                            "rgba(255,255,255,0.09)",
+                        }}
 
                         className="
                           rounded-full
@@ -2037,13 +2160,17 @@ Terima kasih.
                         {
                           item
                         }
-                      </span>
+                      </motion.span>
                     )
                   )}
                 </div>
               </div>
 
-              <div
+              <motion.div
+                whileHover={{
+                  y: -5,
+                }}
+
                 className="
                   rounded-[26px]
                   border
@@ -2103,11 +2230,11 @@ Terima kasih.
 
                   whileHover={{
                     y: -2,
+                    scale: 1.01,
                   }}
 
                   whileTap={{
-                    scale:
-                      0.98,
+                    scale: 0.97,
                   }}
 
                   className="
@@ -2124,10 +2251,8 @@ Terima kasih.
                 >
                   Konsultasi Paket All In
                 </motion.button>
-              </div>
+              </motion.div>
             </div>
-
-            {/* FACILITIES */}
 
             <div
               className="
@@ -2195,42 +2320,6 @@ Terima kasih.
               />
             </div>
           </motion.div>
-
-          <div
-            className="
-              mx-auto
-              mt-7
-              max-w-3xl
-              rounded-[20px]
-              border
-              border-[#eadfd8]
-              bg-[#f8f2ee]
-              px-5
-              py-4
-              text-center
-            "
-          >
-            <p
-              className="
-                text-[10px]
-                leading-6
-                text-[#85776f]
-
-                sm:text-xs
-              "
-            >
-              Harga paket dapat
-              berubah mengikuti
-              tanggal acara,
-              pilihan vendor,
-              venue dan kebutuhan
-              wedding. Hubungi
-              ABEMANA untuk
-              informasi harga,
-              promo dan
-              ketersediaan terbaru.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -2242,65 +2331,139 @@ Terima kasih.
         id="gallery"
 
         className="
+          relative
+          overflow-hidden
           bg-[#29231f]
           py-20
           text-white
-
           sm:py-28
         "
       >
+        <motion.div
+          animate={{
+            x: [
+              0,
+              40,
+              0,
+            ],
+
+            y: [
+              0,
+              -30,
+              0,
+            ],
+          }}
+
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+
+          className="
+            pointer-events-none
+            absolute
+            -left-32
+            top-20
+            h-[320px]
+            w-[320px]
+            rounded-full
+            bg-[#8d6655]/20
+            blur-[100px]
+          "
+        />
+
         <div
           className="
             container-main
+            relative
           "
         >
-          <SectionTag light>
-            Galeri Wedding
-          </SectionTag>
+          <motion.div
+            initial="hidden"
 
-          <h2
-            className="
-              font-display
-              mt-4
-              max-w-3xl
-              text-[38px]
-              font-semibold
-              leading-[1.05]
+            whileInView="show"
 
-              sm:text-5xl
+            viewport={{
+              once: true,
+            }}
 
-              lg:text-[54px]
-            "
+            variants={
+              stagger
+            }
           >
-            Momen indah yang
-            layak untuk dikenang.
-          </h2>
+            <motion.div
+              variants={
+                fadeUp
+              }
+            >
+              <SectionTag light>
+                Galeri Wedding
+              </SectionTag>
+            </motion.div>
 
-          <p
-            className="
-              mt-5
-              max-w-xl
-              text-sm
-              leading-7
-              text-white/50
-            "
-          >
-            Inspirasi suasana,
-            dekorasi dan momen
-            wedding untuk
-            menggambarkan hari
-            spesial Anda bersama
-            ABEMANA.
-          </p>
+            <motion.h2
+              variants={
+                fadeUp
+              }
 
-          {/* MOBILE */}
+              className="
+                font-display
+                mt-4
+                max-w-3xl
+                text-[38px]
+                font-semibold
+                leading-[1.05]
 
-          <div
+                sm:text-5xl
+
+                lg:text-[54px]
+              "
+            >
+              Momen indah yang
+              layak untuk dikenang.
+            </motion.h2>
+
+            <motion.p
+              variants={
+                fadeUp
+              }
+
+              className="
+                mt-5
+                max-w-xl
+                text-sm
+                leading-7
+                text-white/50
+              "
+            >
+              Inspirasi suasana,
+              dekorasi dan momen
+              wedding untuk
+              menggambarkan hari
+              spesial Anda bersama
+              ABEMANA.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+
+            whileInView="show"
+
+            viewport={{
+              once: true,
+              amount: 0.1,
+            }}
+
+            variants={
+              stagger
+            }
+
             className="
               mt-10
               grid
               gap-3
-
               md:hidden
             "
           >
@@ -2325,9 +2488,7 @@ Terima kasih.
                 />
               )
             )}
-          </div>
-
-          {/* DESKTOP */}
+          </motion.div>
 
           <motion.div
             initial="hidden"
@@ -2336,6 +2497,7 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.1,
             }}
 
             variants={
@@ -2408,7 +2570,6 @@ Terima kasih.
 
         className="
           py-20
-
           sm:py-28
         "
       >
@@ -2425,12 +2586,9 @@ Terima kasih.
             description="Setiap pasangan memiliki cerita yang berbeda. Kami senang dapat menjadi bagian dari hari spesial mereka."
           />
 
-          {/* MOBILE */}
-
           <div
             className="
               mt-10
-
               sm:hidden
             "
           >
@@ -2441,8 +2599,6 @@ Terima kasih.
             />
           </div>
 
-          {/* DESKTOP */}
-
           <motion.div
             initial="hidden"
 
@@ -2450,6 +2606,7 @@ Terima kasih.
 
             viewport={{
               once: true,
+              amount: 0.1,
             }}
 
             variants={
@@ -2497,7 +2654,6 @@ Terima kasih.
         className="
           bg-[#f7f1ed]
           py-20
-
           sm:py-28
         "
       >
@@ -2511,12 +2667,35 @@ Terima kasih.
             lg:items-center
           "
         >
-          <div>
-            <SectionTag>
-              Lokasi
-            </SectionTag>
+          <motion.div
+            initial="hidden"
 
-            <h2
+            whileInView="show"
+
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
+
+            variants={
+              stagger
+            }
+          >
+            <motion.div
+              variants={
+                fadeUp
+              }
+            >
+              <SectionTag>
+                Lokasi
+              </SectionTag>
+            </motion.div>
+
+            <motion.h2
+              variants={
+                fadeUp
+              }
+
               className="
                 font-display
                 mt-4
@@ -2530,9 +2709,13 @@ Terima kasih.
               Konsultasikan
               rencana wedding Anda
               bersama ABEMANA.
-            </h2>
+            </motion.h2>
 
-            <p
+            <motion.p
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-5
                 max-w-lg
@@ -2546,9 +2729,13 @@ Terima kasih.
               konsep dan kebutuhan
               wedding Anda bersama
               tim ABEMANA.
-            </p>
+            </motion.p>
 
-            <div
+            <motion.div
+              variants={
+                stagger
+              }
+
               className="
                 mt-8
                 space-y-5
@@ -2589,14 +2776,17 @@ Terima kasih.
                   INSTAGRAM_USERNAME
                 }
               />
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              variants={
+                fadeUp
+              }
+
               className="
                 mt-8
                 grid
                 gap-3
-
                 sm:flex
               "
             >
@@ -2610,7 +2800,11 @@ Terima kasih.
                 rel="noreferrer"
 
                 whileHover={{
-                  y: -2,
+                  y: -3,
+                }}
+
+                whileTap={{
+                  scale: 0.97,
                 }}
 
                 className="
@@ -2628,9 +2822,7 @@ Terima kasih.
                 "
               >
                 <MapPin
-                  size={
-                    17
-                  }
+                  size={17}
                 />
 
                 Buka Google Maps
@@ -2646,7 +2838,11 @@ Terima kasih.
                 rel="noreferrer"
 
                 whileHover={{
-                  y: -2,
+                  y: -3,
+                }}
+
+                whileTap={{
+                  scale: 0.97,
                 }}
 
                 className="
@@ -2665,17 +2861,38 @@ Terima kasih.
                 "
               >
                 <Instagram
-                  size={
-                    17
-                  }
+                  size={17}
                 />
 
                 Instagram
               </motion.a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 35,
+            }}
+
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
+
+            transition={{
+              duration: 0.75,
+            }}
+
+            whileHover={{
+              y: -4,
+            }}
+
             className="
               overflow-hidden
               rounded-[28px]
@@ -2697,8 +2914,7 @@ Terima kasih.
               height="430"
 
               style={{
-                border:
-                  0,
+                border: 0,
               }}
 
               allowFullScreen=""
@@ -2707,7 +2923,7 @@ Terima kasih.
 
               referrerPolicy="no-referrer-when-downgrade"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -2720,11 +2936,29 @@ Terima kasih.
 
         className="
           py-16
-
           sm:py-24
         "
       >
-        <div
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 35,
+          }}
+
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+
+          viewport={{
+            once: true,
+            amount: 0.1,
+          }}
+
+          transition={{
+            duration: 0.75,
+          }}
+
           className="
             container-main
             overflow-hidden
@@ -2738,16 +2972,12 @@ Terima kasih.
             lg:grid-cols-[.85fr_1.15fr]
           "
         >
-          {/* INFO */}
-
           <div
             className="
               bg-[#29231f]
               p-6
               text-white
-
               sm:p-8
-
               lg:p-12
             "
           >
@@ -2839,14 +3069,10 @@ Terima kasih.
             </div>
           </div>
 
-          {/* FORM */}
-
           <div
             className="
               p-5
-
               sm:p-8
-
               lg:p-10
             "
           >
@@ -2888,57 +3114,42 @@ Terima kasih.
                 mt-6
                 grid
                 gap-4
-
                 sm:grid-cols-2
               "
             >
               <InputField
                 label="Nama Lengkap"
-
                 name="name"
-
                 value={
                   form.name
                 }
-
                 onChange={
                   handleChange
                 }
-
                 placeholder="Nama Anda"
-
                 required
               />
 
               <InputField
                 label="Nomor WhatsApp"
-
                 name="phone"
-
                 value={
                   form.phone
                 }
-
                 onChange={
                   handleChange
                 }
-
                 placeholder="08xxxxxxxxxx"
-
                 required
               />
 
               <InputField
                 label="Tanggal Wedding"
-
                 name="date"
-
                 type="date"
-
                 value={
                   form.date
                 }
-
                 onChange={
                   handleChange
                 }
@@ -2946,17 +3157,13 @@ Terima kasih.
 
               <InputField
                 label="Lokasi Wedding"
-
                 name="location"
-
                 value={
                   form.location
                 }
-
                 onChange={
                   handleChange
                 }
-
                 placeholder="Semarang"
               />
 
@@ -2964,7 +3171,6 @@ Terima kasih.
                 className="
                   grid
                   gap-2
-
                   sm:col-span-2
                 "
               >
@@ -2997,8 +3203,10 @@ Terima kasih.
                     px-4
                     text-sm
                     outline-none
+                    transition
 
                     focus:border-[#9d7562]
+                    focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
                   "
                 >
                   <option>
@@ -3023,7 +3231,6 @@ Terima kasih.
                 className="
                   grid
                   gap-2
-
                   sm:col-span-2
                 "
               >
@@ -3061,8 +3268,10 @@ Terima kasih.
                     py-3.5
                     text-sm
                     outline-none
+                    transition
 
                     focus:border-[#9d7562]
+                    focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
                   "
                 />
               </label>
@@ -3071,12 +3280,12 @@ Terima kasih.
                 type="submit"
 
                 whileHover={{
-                  y: -2,
+                  y: -3,
+                  scale: 1.01,
                 }}
 
                 whileTap={{
-                  scale:
-                    0.98,
+                  scale: 0.97,
                 }}
 
                 className="
@@ -3090,27 +3299,24 @@ Terima kasih.
                   text-sm
                   font-semibold
                   text-white
+                  shadow-lg
 
                   sm:col-span-2
                 "
               >
                 <MessageCircle
-                  size={
-                    17
-                  }
+                  size={17}
                 />
 
                 Konsultasi via WhatsApp
 
                 <ArrowUpRight
-                  size={
-                    15
-                  }
+                  size={15}
                 />
               </motion.button>
             </form>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* ====================================================
@@ -3136,8 +3342,6 @@ Terima kasih.
             lg:grid-cols-[1.3fr_.7fr_.8fr_.7fr]
           "
         >
-          {/* BRAND */}
-
           <div>
             <div
               className="
@@ -3146,7 +3350,12 @@ Terima kasih.
                 gap-4
               "
             >
-              <div
+              <motion.div
+                whileHover={{
+                  rotate: 3,
+                  scale: 1.05,
+                }}
+
                 className="
                   h-16
                   w-16
@@ -3162,7 +3371,7 @@ Terima kasih.
                     LOGO_URL
                   }
 
-                  alt="Logo ABEMANA Wedding Organizer"
+                  alt="Logo ABEMANA"
 
                   className="
                     h-full
@@ -3170,7 +3379,7 @@ Terima kasih.
                     object-cover
                   "
                 />
-              </div>
+              </motion.div>
 
               <div>
                 <h3
@@ -3214,8 +3423,6 @@ Terima kasih.
             </p>
           </div>
 
-          {/* NAV */}
-
           <div>
             <p
               className="
@@ -3235,33 +3442,23 @@ Terima kasih.
                 text-[#766a63]
               "
             >
-              <a
-                href="#about"
-              >
+              <a href="#about">
                 Tentang
               </a>
 
-              <a
-                href="#services"
-              >
+              <a href="#services">
                 Layanan
               </a>
 
-              <a
-                href="#packages"
-              >
+              <a href="#packages">
                 Paket
               </a>
 
-              <a
-                href="#gallery"
-              >
+              <a href="#gallery">
                 Galeri
               </a>
             </div>
           </div>
-
-          {/* CONTACT */}
 
           <div>
             <p
@@ -3289,9 +3486,7 @@ Terima kasih.
                 "
               >
                 <Phone
-                  size={
-                    16
-                  }
+                  size={16}
                 />
 
                 {
@@ -3306,9 +3501,7 @@ Terima kasih.
                 "
               >
                 <MapPin
-                  size={
-                    16
-                  }
+                  size={16}
                 />
 
                 Ngaliyan,
@@ -3316,8 +3509,6 @@ Terima kasih.
               </p>
             </div>
           </div>
-
-          {/* SOCIAL */}
 
           <div>
             <p
@@ -3403,24 +3594,19 @@ Terima kasih.
           FLOATING WHATSAPP
       ==================================================== */}
 
-      <motion.a
-        href={`https://wa.me/${WHATSAPP_NUMBER}`}
-
-        target="_blank"
-
-        rel="noreferrer"
-
-        whileHover={{
-          scale:
-            1.06,
-
-          y:
-            -2,
+      <motion.div
+        animate={{
+          y: [
+            0,
+            -5,
+            0,
+          ],
         }}
 
-        whileTap={{
-          scale:
-            0.92,
+        transition={{
+          duration: 2.6,
+          repeat: Infinity,
+          ease: "easeInOut",
         }}
 
         className="
@@ -3428,27 +3614,79 @@ Terima kasih.
           bottom-3
           right-3
           z-40
-          grid
-          h-12
-          w-12
-          place-items-center
-          rounded-full
-          bg-[#25D366]
-          text-white
-          shadow-xl
 
           sm:bottom-5
           sm:right-5
-          sm:h-14
-          sm:w-14
         "
       >
-        <MessageCircle
-          size={
-            21
-          }
-        />
-      </motion.a>
+        <motion.a
+          href={`https://wa.me/${WHATSAPP_NUMBER}`}
+
+          target="_blank"
+
+          rel="noreferrer"
+
+          whileHover={{
+            scale: 1.08,
+          }}
+
+          whileTap={{
+            scale: 0.9,
+          }}
+
+          className="
+            relative
+            grid
+            h-12
+            w-12
+            place-items-center
+            rounded-full
+            bg-[#25D366]
+            text-white
+            shadow-xl
+
+            sm:h-14
+            sm:w-14
+          "
+        >
+          <motion.span
+            animate={{
+              scale: [
+                1,
+                1.45,
+                1.45,
+              ],
+
+              opacity: [
+                0.3,
+                0,
+                0,
+              ],
+            }}
+
+            transition={{
+              duration: 2.2,
+              repeat: Infinity,
+              ease: "easeOut",
+            }}
+
+            className="
+              absolute
+              inset-0
+              rounded-full
+              bg-[#25D366]
+            "
+          />
+
+          <MessageCircle
+            size={21}
+            className="
+              relative
+              z-10
+            "
+          />
+        </motion.a>
+      </motion.div>
     </div>
   );
 }
@@ -3468,7 +3706,6 @@ function SectionTag({
         font-semibold
         uppercase
         tracking-[0.23em]
-
         sm:text-[9px]
 
         ${
@@ -3496,10 +3733,11 @@ function SectionHeader({
 
       viewport={{
         once: true,
+        amount: 0.2,
       }}
 
       variants={
-        fadeUp
+        stagger
       }
 
       className="
@@ -3508,11 +3746,21 @@ function SectionHeader({
         text-center
       "
     >
-      <SectionTag>
-        {tag}
-      </SectionTag>
+      <motion.div
+        variants={
+          fadeUp
+        }
+      >
+        <SectionTag>
+          {tag}
+        </SectionTag>
+      </motion.div>
 
-      <h2
+      <motion.h2
+        variants={
+          fadeUp
+        }
+
         className="
           font-display
           mt-4
@@ -3524,9 +3772,13 @@ function SectionHeader({
         "
       >
         {title}
-      </h2>
+      </motion.h2>
 
-      <p
+      <motion.p
+        variants={
+          fadeUp
+        }
+
         className="
           mt-5
           text-sm
@@ -3535,7 +3787,7 @@ function SectionHeader({
         "
       >
         {description}
-      </p>
+      </motion.p>
     </motion.div>
   );
 }
@@ -3545,7 +3797,11 @@ function Statistic({
   label,
 }) {
   return (
-    <div
+    <motion.div
+      whileHover={{
+        y: -3,
+      }}
+
       className="
         px-2
         text-center
@@ -3570,7 +3826,7 @@ function Statistic({
       >
         {label}
       </p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -3580,7 +3836,15 @@ function AboutPoint({
   description,
 }) {
   return (
-    <div
+    <motion.div
+      variants={
+        fadeUp
+      }
+
+      whileHover={{
+        x: 5,
+      }}
+
       className="
         flex
         gap-4
@@ -3619,7 +3883,7 @@ function AboutPoint({
           {description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -3636,24 +3900,34 @@ function ServiceCard({
       }
 
       whileHover={{
-        y:
-          -5,
+        y: -8,
+        scale: 1.01,
+      }}
+
+      transition={{
+        duration: 0.25,
       }}
 
       className="
+        group
         rounded-[26px]
         border
         border-[#e6dad3]
         bg-white
         p-6
-        transition
+        transition-shadow
 
-        hover:shadow-xl
+        hover:shadow-[0_18px_45px_rgba(80,55,45,0.09)]
 
         sm:p-7
       "
     >
-      <div
+      <motion.div
+        whileHover={{
+          rotate: -5,
+          scale: 1.08,
+        }}
+
         className="
           grid
           h-12
@@ -3665,11 +3939,9 @@ function ServiceCard({
         "
       >
         <Icon
-          size={
-            21
-          }
+          size={21}
         />
-      </div>
+      </motion.div>
 
       <h3
         className="
@@ -3711,8 +3983,12 @@ function WOPackageCard({
       }
 
       whileHover={{
-        y:
-          -5,
+        y: -8,
+        scale: 1.01,
+      }}
+
+      transition={{
+        duration: 0.25,
       }}
 
       className={`
@@ -3721,7 +3997,6 @@ function WOPackageCard({
         rounded-[30px]
         border
         p-6
-        transition
 
         sm:p-7
 
@@ -3742,7 +4017,21 @@ function WOPackageCard({
       `}
     >
       {item.popular && (
-        <span
+        <motion.span
+          animate={{
+            scale: [
+              1,
+              1.04,
+              1,
+            ],
+          }}
+
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+
           className="
             absolute
             right-4
@@ -3759,7 +4048,7 @@ function WOPackageCard({
           "
         >
           Best Seller
-        </span>
+        </motion.span>
       )}
 
       <p
@@ -3771,9 +4060,7 @@ function WOPackageCard({
           text-[#b68a75]
         "
       >
-        {
-          item.guest
-        }
+        {item.guest}
       </p>
 
       <h4
@@ -3784,9 +4071,7 @@ function WOPackageCard({
           font-semibold
         "
       >
-        {
-          item.name
-        }
+        {item.name}
       </h4>
 
       <p
@@ -3807,9 +4092,7 @@ function WOPackageCard({
           font-semibold
         "
       >
-        {
-          item.price
-        }
+        {item.price}
       </p>
 
       <p
@@ -3820,9 +4103,7 @@ function WOPackageCard({
           opacity-70
         "
       >
-        {
-          item.description
-        }
+        {item.description}
       </p>
 
       <div
@@ -3843,10 +4124,14 @@ function WOPackageCard({
           (
             feature
           ) => (
-            <li
+            <motion.li
               key={
                 feature
               }
+
+              whileHover={{
+                x: 3,
+              }}
 
               className="
                 flex
@@ -3857,9 +4142,7 @@ function WOPackageCard({
               "
             >
               <Check
-                size={
-                  13
-                }
+                size={13}
 
                 className="
                   mt-1
@@ -3869,7 +4152,7 @@ function WOPackageCard({
               />
 
               {feature}
-            </li>
+            </motion.li>
           )
         )}
       </ul>
@@ -3883,9 +4166,12 @@ function WOPackageCard({
           )
         }
 
+        whileHover={{
+          scale: 1.015,
+        }}
+
         whileTap={{
-          scale:
-            0.98,
+          scale: 0.97,
         }}
 
         className={`
@@ -3915,9 +4201,7 @@ function WOPackageCard({
         `}
       >
         <MessageCircle
-          size={
-            16
-          }
+          size={16}
         />
 
         Cek Paket
@@ -3957,6 +4241,11 @@ function AllInAccordion({
               }
 
               layout
+
+              whileHover={{
+                backgroundColor:
+                  "rgba(255,255,255,0.055)",
+              }}
 
               className="
                 overflow-hidden
@@ -4028,6 +4317,11 @@ function AllInAccordion({
                       isOpen
                         ? 180
                         : 0,
+
+                    scale:
+                      isOpen
+                        ? 1.05
+                        : 1,
                   }}
 
                   className="
@@ -4043,9 +4337,7 @@ function AllInAccordion({
                   "
                 >
                   <ChevronDown
-                    size={
-                      15
-                    }
+                    size={15}
                   />
                 </motion.div>
               </button>
@@ -4075,14 +4367,22 @@ function AllInAccordion({
 
                     transition={{
                       duration:
-                        0.3,
+                        0.32,
                     }}
 
                     className="
                       overflow-hidden
                     "
                   >
-                    <div
+                    <motion.div
+                      initial="hidden"
+
+                      animate="show"
+
+                      variants={
+                        stagger
+                      }
+
                       className="
                         grid
                         gap-2
@@ -4091,7 +4391,6 @@ function AllInAccordion({
                         p-5
 
                         sm:grid-cols-2
-
                         lg:grid-cols-3
                       "
                     >
@@ -4099,10 +4398,18 @@ function AllInAccordion({
                         (
                           item
                         ) => (
-                          <div
+                          <motion.div
                             key={
                               item
                             }
+
+                            variants={
+                              fadeUp
+                            }
+
+                            whileHover={{
+                              y: -2,
+                            }}
 
                             className="
                               flex
@@ -4116,9 +4423,7 @@ function AllInAccordion({
                             "
                           >
                             <Check
-                              size={
-                                11
-                              }
+                              size={11}
 
                               className="
                                 mt-1
@@ -4127,13 +4432,11 @@ function AllInAccordion({
                               "
                             />
 
-                            {
-                              item
-                            }
-                          </div>
+                            {item}
+                          </motion.div>
                         )
                       )}
-                    </div>
+                    </motion.div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -4154,6 +4457,10 @@ function GalleryCard({
       variants={
         fadeUp
       }
+
+      whileTap={{
+        scale: 0.985,
+      }}
 
       className={`
         group
@@ -4208,8 +4515,7 @@ function GalleryDesktopCard({
       }
 
       whileHover={{
-        y:
-          -3,
+        y: -5,
       }}
 
       className={`
@@ -4240,7 +4546,7 @@ function GalleryDesktopCard({
           transition-transform
           duration-[900ms]
 
-          group-hover:scale-[1.045]
+          group-hover:scale-[1.06]
         "
       />
 
@@ -4266,6 +4572,8 @@ function GalleryOverlay({
           from-black/70
           via-black/5
           to-transparent
+          transition-opacity
+          duration-500
         "
       />
 
@@ -4286,9 +4594,7 @@ function GalleryOverlay({
             text-white/60
           "
         >
-          {
-            item.category
-          }
+          {item.category}
         </p>
 
         <h3
@@ -4303,9 +4609,7 @@ function GalleryOverlay({
             lg:text-[25px]
           "
         >
-          {
-            item.title
-          }
+          {item.title}
         </h3>
       </div>
     </>
@@ -4367,7 +4671,7 @@ function MobileTestimonialSlider({
             setPaused(
               false
             ),
-          2000
+          1800
         );
       }}
     >
@@ -4381,22 +4685,24 @@ function MobileTestimonialSlider({
 
           initial={{
             opacity: 0,
-            x: 25,
+            x: 35,
+            scale: 0.98,
           }}
 
           animate={{
             opacity: 1,
             x: 0,
+            scale: 1,
           }}
 
           exit={{
             opacity: 0,
-            x: -25,
+            x: -35,
+            scale: 0.98,
           }}
 
           transition={{
-            duration:
-              0.4,
+            duration: 0.4,
           }}
         >
           <TestimonialCard
@@ -4422,12 +4728,16 @@ function MobileTestimonialSlider({
             _,
             index
           ) => (
-            <button
+            <motion.button
               key={
                 index
               }
 
               type="button"
+
+              whileTap={{
+                scale: 0.8,
+              }}
 
               aria-label={`Testimoni ${
                 index + 1
@@ -4474,6 +4784,10 @@ function TestimonialCard({
         fadeUp
       }
 
+      whileHover={{
+        y: -6,
+      }}
+
       className="
         h-full
         rounded-[28px]
@@ -4486,15 +4800,19 @@ function TestimonialCard({
         sm:p-8
       "
     >
-      <Quote
-        size={
-          24
-        }
-
-        className="
-          text-[#ac826f]
-        "
-      />
+      <motion.div
+        whileHover={{
+          rotate: -8,
+          scale: 1.05,
+        }}
+      >
+        <Quote
+          size={24}
+          className="
+            text-[#ac826f]
+          "
+        />
+      </motion.div>
 
       <div
         className="
@@ -4512,10 +4830,7 @@ function TestimonialCard({
                 star
               }
 
-              size={
-                13
-              }
-
+              size={13}
               fill="currentColor"
 
               className="
@@ -4581,14 +4896,27 @@ function LocationItem({
   text,
 }) {
   return (
-    <div
+    <motion.div
+      variants={
+        fadeUp
+      }
+
+      whileHover={{
+        x: 5,
+      }}
+
       className="
         flex
         items-start
         gap-4
       "
     >
-      <div
+      <motion.div
+        whileHover={{
+          rotate: -5,
+          scale: 1.05,
+        }}
+
         className="
           grid
           h-11
@@ -4601,11 +4929,9 @@ function LocationItem({
         "
       >
         <Icon
-          size={
-            18
-          }
+          size={18}
         />
-      </div>
+      </motion.div>
 
       <div>
         <p
@@ -4628,7 +4954,7 @@ function LocationItem({
           {text}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -4638,7 +4964,13 @@ function CompactContactItem({
   value,
 }) {
   return (
-    <div
+    <motion.div
+      whileHover={{
+        x: 4,
+        backgroundColor:
+          "rgba(255,255,255,0.07)",
+      }}
+
       className="
         flex
         items-center
@@ -4663,9 +4995,7 @@ function CompactContactItem({
         "
       >
         <Icon
-          size={
-            16
-          }
+          size={16}
         />
       </div>
 
@@ -4694,7 +5024,7 @@ function CompactContactItem({
           {value}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -4730,10 +5060,12 @@ function InputField({
           px-4
           text-sm
           outline-none
+          transition
 
           placeholder:text-[#b2a69f]
 
           focus:border-[#9d7562]
+          focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
         "
       />
     </label>
@@ -4755,8 +5087,12 @@ function SocialButton({
       rel="noreferrer"
 
       whileHover={{
-        y:
-          -3,
+        y: -4,
+        scale: 1.05,
+      }}
+
+      whileTap={{
+        scale: 0.92,
       }}
 
       className="
@@ -4775,9 +5111,7 @@ function SocialButton({
       "
     >
       <Icon
-        size={
-          18
-        }
+        size={18}
       />
     </motion.a>
   );
