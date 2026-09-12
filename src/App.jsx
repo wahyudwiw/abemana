@@ -379,7 +379,7 @@ const testimonials = [
 const fadeUp = {
   hidden: {
     opacity: 0,
-    y: 28,
+    y: 30,
   },
 
   show: {
@@ -387,7 +387,7 @@ const fadeUp = {
     y: 0,
 
     transition: {
-      duration: 0.65,
+      duration: 0.7,
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
@@ -396,7 +396,7 @@ const fadeUp = {
 const fadeLeft = {
   hidden: {
     opacity: 0,
-    x: -35,
+    x: -40,
   },
 
   show: {
@@ -404,7 +404,7 @@ const fadeLeft = {
     x: 0,
 
     transition: {
-      duration: 0.7,
+      duration: 0.75,
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
@@ -413,7 +413,7 @@ const fadeLeft = {
 const fadeRight = {
   hidden: {
     opacity: 0,
-    x: 35,
+    x: 40,
   },
 
   show: {
@@ -421,7 +421,7 @@ const fadeRight = {
     x: 0,
 
     transition: {
-      duration: 0.7,
+      duration: 0.75,
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
@@ -432,7 +432,7 @@ const stagger = {
 
   show: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.12,
       delayChildren: 0.05,
     },
   },
@@ -472,7 +472,7 @@ export default function App() {
     });
 
   /* ========================================================
-     NAVBAR SCROLL
+     NAVBAR
   ======================================================== */
 
   useEffect(() => {
@@ -528,10 +528,7 @@ export default function App() {
 
           cleanup();
         } catch {
-          /*
-            Browser dapat memblokir autoplay audio.
-            Akan dicoba lagi saat interaksi pertama.
-          */
+          // browser dapat memblokir autoplay
         }
       };
 
@@ -687,7 +684,7 @@ Terima kasih.
 
       <motion.header
         initial={{
-          y: -70,
+          y: -80,
           opacity: 0,
         }}
 
@@ -697,7 +694,7 @@ Terima kasih.
         }}
 
         transition={{
-          duration: 0.7,
+          duration: 0.8,
           ease: "easeOut",
         }}
 
@@ -730,11 +727,13 @@ Terima kasih.
             h-[64px]
             items-center
             justify-between
+
             sm:h-20
           "
         >
           <a
             href="#home"
+
             className="
               flex
               items-center
@@ -759,6 +758,7 @@ Terima kasih.
                 rounded-full
                 bg-white
                 shadow-sm
+
                 sm:h-12
                 sm:w-12
               "
@@ -785,6 +785,7 @@ Terima kasih.
                   text-[16px]
                   font-semibold
                   leading-none
+
                   sm:text-[20px]
                 "
               >
@@ -799,6 +800,7 @@ Terima kasih.
                   uppercase
                   tracking-[0.2em]
                   text-[#987361]
+
                   sm:text-[7px]
                 "
               >
@@ -812,6 +814,7 @@ Terima kasih.
               hidden
               items-center
               gap-7
+
               lg:flex
             "
           >
@@ -882,6 +885,7 @@ Terima kasih.
               text-sm
               font-semibold
               !text-white
+
               lg:flex
             "
           >
@@ -914,6 +918,7 @@ Terima kasih.
               border
               border-[#ddd0c8]
               bg-white
+
               lg:hidden
             "
           >
@@ -951,6 +956,7 @@ Terima kasih.
                 glass
                 border-t
                 border-[#e8ddd5]
+
                 lg:hidden
               "
             >
@@ -990,7 +996,7 @@ Terima kasih.
                       transition={{
                         delay:
                           index *
-                          0.04,
+                          0.05,
                       }}
 
                       onClick={() =>
@@ -1005,6 +1011,7 @@ Terima kasih.
                         py-3
                         text-sm
                         font-medium
+
                         hover:bg-[#f4ebe5]
                       "
                     >
@@ -1055,28 +1062,29 @@ Terima kasih.
           relative
           overflow-hidden
           pt-[64px]
+
           sm:pt-20
         "
       >
-        {/* moving blob */}
+        {/* BLOBS */}
 
         <motion.div
           animate={{
             x: [
-              -20,
-              35,
-              -20,
+              -30,
+              25,
+              -30,
             ],
 
             y: [
               0,
-              -25,
+              -35,
               0,
             ],
 
             scale: [
               1,
-              1.1,
+              1.15,
               1,
             ],
           }}
@@ -1092,25 +1100,25 @@ Terima kasih.
             absolute
             -left-32
             top-24
-            h-[330px]
-            w-[330px]
+            h-[340px]
+            w-[340px]
             rounded-full
             bg-[#dcbfb0]/25
-            blur-[85px]
+            blur-[90px]
           "
         />
 
         <motion.div
           animate={{
             x: [
-              20,
-              -30,
-              20,
+              30,
+              -20,
+              30,
             ],
 
             y: [
               -20,
-              30,
+              35,
               -20,
             ],
           }}
@@ -1125,11 +1133,11 @@ Terima kasih.
             pointer-events-none
             absolute
             -right-40
-            bottom-10
-            h-[370px]
-            w-[370px]
+            bottom-0
+            h-[380px]
+            w-[380px]
             rounded-full
-            bg-[#eadbd2]/60
+            bg-[#eadbd2]/55
             blur-[100px]
           "
         />
@@ -1153,6 +1161,8 @@ Terima kasih.
             lg:py-16
           "
         >
+          {/* LEFT */}
+
           <motion.div
             variants={
               stagger
@@ -1166,6 +1176,20 @@ Terima kasih.
               variants={
                 fadeUp
               }
+
+              animate={{
+                y: [
+                  0,
+                  -4,
+                  0,
+                ],
+              }}
+
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
 
               className="
                 mb-5
@@ -1186,6 +1210,7 @@ Terima kasih.
                   uppercase
                   tracking-[0.17em]
                   text-[#8f6856]
+
                   sm:text-[9px]
                 "
               >
@@ -1193,11 +1218,9 @@ Terima kasih.
               </span>
             </motion.div>
 
-            <motion.h2
-              variants={
-                fadeUp
-              }
+            {/* TITLE */}
 
+            <div
               className="
                 font-display
                 max-w-[350px]
@@ -1213,19 +1236,55 @@ Terima kasih.
                 lg:text-[76px]
               "
             >
-              Wujudkan hari
-              pernikahan yang
+              <motion.div
+                variants={
+                  fadeUp
+                }
+              >
+                Wujudkan hari
+              </motion.div>
 
-              <span
+              <motion.div
+                variants={
+                  fadeUp
+                }
+              >
+                pernikahan yang
+              </motion.div>
+
+              <motion.div
+                variants={
+                  fadeUp
+                }
+
+                animate={{
+                  opacity: [
+                    0.85,
+                    1,
+                    0.85,
+                  ],
+
+                  y: [
+                    0,
+                    -2,
+                    0,
+                  ],
+                }}
+
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+
                 className="
                   italic
                   text-[#a87f6c]
                 "
               >
-                {" "}
                 indah dan berkesan.
-              </span>
-            </motion.h2>
+              </motion.div>
+            </div>
 
             <motion.p
               variants={
@@ -1261,15 +1320,30 @@ Terima kasih.
                 mt-6
                 grid
                 gap-3
+
                 sm:flex
               "
             >
               <motion.a
                 href="#packages"
 
+                animate={{
+                  boxShadow: [
+                    "0 10px 30px rgba(41,35,31,0.12)",
+                    "0 14px 36px rgba(41,35,31,0.2)",
+                    "0 10px 30px rgba(41,35,31,0.12)",
+                  ],
+                }}
+
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+
                 whileHover={{
                   y: -3,
-                  scale: 1.015,
+                  scale: 1.02,
                 }}
 
                 whileTap={{
@@ -1288,7 +1362,6 @@ Terima kasih.
                   text-sm
                   font-semibold
                   !text-white
-                  shadow-lg
                 "
               >
                 Lihat Paket
@@ -1303,8 +1376,6 @@ Terima kasih.
 
                 whileHover={{
                   y: -3,
-                  backgroundColor:
-                    "#faf6f3",
                 }}
 
                 whileTap={{
@@ -1336,7 +1407,7 @@ Terima kasih.
 
             <motion.div
               variants={
-                fadeUp
+                stagger
               }
 
               className="
@@ -1350,38 +1421,64 @@ Terima kasih.
               <Statistic
                 value="150+"
                 label="Wedding"
+                delay={0}
               />
 
               <Statistic
                 value="98%"
                 label="Happy Couple"
+                delay={0.25}
               />
 
               <Statistic
                 value="30+"
                 label="Vendor Partner"
+                delay={0.5}
               />
             </motion.div>
           </motion.div>
 
+          {/* HERO IMAGE */}
+
           <motion.div
             initial={{
               opacity: 0,
-              x: 35,
+              x: 45,
+              scale: 0.96,
             }}
 
             animate={{
               opacity: 1,
               x: 0,
+              scale: 1,
+              y: [
+                0,
+                -6,
+                0,
+              ],
             }}
 
             transition={{
-              duration: 0.85,
-              delay: 0.15,
-            }}
+              opacity: {
+                duration: 0.8,
+                delay: 0.2,
+              },
 
-            whileHover={{
-              y: -5,
+              x: {
+                duration: 0.8,
+                delay: 0.2,
+              },
+
+              scale: {
+                duration: 0.8,
+                delay: 0.2,
+              },
+
+              y: {
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
             }}
 
             className="
@@ -1400,13 +1497,13 @@ Terima kasih.
               animate={{
                 scale: [
                   1,
-                  1.035,
+                  1.05,
                   1,
                 ],
               }}
 
               transition={{
-                duration: 12,
+                duration: 10,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
@@ -1415,8 +1512,42 @@ Terima kasih.
                 h-[400px]
                 w-full
                 object-cover
+
                 sm:h-[600px]
+
                 lg:h-[680px]
+              "
+            />
+
+            {/* MOVING LIGHT */}
+
+            <motion.div
+              animate={{
+                x: [
+                  "-140%",
+                  "180%",
+                ],
+              }}
+
+              transition={{
+                duration: 7,
+                repeat: Infinity,
+                repeatDelay: 4,
+                ease: "easeInOut",
+              }}
+
+              className="
+                pointer-events-none
+                absolute
+                inset-y-0
+                left-0
+                w-[35%]
+                -skew-x-12
+                bg-gradient-to-r
+                from-transparent
+                via-white/10
+                to-transparent
+                blur-xl
               "
             />
 
@@ -1443,7 +1574,7 @@ Terima kasih.
               }}
 
               transition={{
-                delay: 0.6,
+                delay: 0.8,
                 duration: 0.6,
               }}
 
@@ -1454,7 +1585,20 @@ Terima kasih.
                 text-white
               "
             >
-              <p
+              <motion.p
+                animate={{
+                  opacity: [
+                    0.5,
+                    0.85,
+                    0.5,
+                  ],
+                }}
+
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                }}
+
                 className="
                   text-[8px]
                   uppercase
@@ -1463,7 +1607,7 @@ Terima kasih.
                 "
               >
                 ABEMANA
-              </p>
+              </motion.p>
 
               <h3
                 className="
@@ -1490,6 +1634,7 @@ Terima kasih.
 
         className="
           py-20
+
           sm:py-28
         "
       >
@@ -1521,6 +1666,7 @@ Terima kasih.
               grid
               grid-cols-2
               gap-3
+
               sm:gap-4
             "
           >
@@ -1570,6 +1716,7 @@ Terima kasih.
                 mt-8
                 overflow-hidden
                 rounded-[26px]
+
                 sm:mt-12
               "
             >
@@ -1715,6 +1862,7 @@ Terima kasih.
           overflow-hidden
           bg-[#f7f1ed]
           py-20
+
           sm:py-28
         "
       >
@@ -1722,8 +1870,14 @@ Terima kasih.
           animate={{
             scale: [
               1,
-              1.1,
+              1.12,
               1,
+            ],
+
+            x: [
+              0,
+              -20,
+              0,
             ],
           }}
 
@@ -1741,7 +1895,7 @@ Terima kasih.
             h-[300px]
             w-[300px]
             rounded-full
-            bg-[#e1cabc]/40
+            bg-[#e1cabc]/35
             blur-[100px]
           "
         />
@@ -1780,6 +1934,7 @@ Terima kasih.
               gap-4
 
               sm:grid-cols-2
+
               lg:grid-cols-3
             "
           >
@@ -1811,6 +1966,7 @@ Terima kasih.
 
         className="
           py-20
+
           sm:py-28
         "
       >
@@ -1854,7 +2010,6 @@ Terima kasih.
               border-[#eadfd8]
               bg-[#faf6f3]
               p-6
-              shadow-[0_12px_40px_rgba(70,50,40,0.04)]
 
               sm:p-8
 
@@ -1879,7 +2034,6 @@ Terima kasih.
                   text-[34px]
                   font-semibold
                   leading-[1.04]
-                  tracking-[-0.015em]
 
                   sm:text-[42px]
                 "
@@ -1903,6 +2057,7 @@ Terima kasih.
             <div
               className="
                 mt-5
+
                 lg:mt-0
               "
             >
@@ -2010,6 +2165,7 @@ Terima kasih.
               mt-7
               grid
               gap-5
+
               lg:grid-cols-3
             "
           >
@@ -2142,8 +2298,6 @@ Terima kasih.
 
                         whileHover={{
                           y: -2,
-                          backgroundColor:
-                            "rgba(255,255,255,0.09)",
                         }}
 
                         className="
@@ -2230,7 +2384,6 @@ Terima kasih.
 
                   whileHover={{
                     y: -2,
-                    scale: 1.01,
                   }}
 
                   whileTap={{
@@ -2331,120 +2484,56 @@ Terima kasih.
         id="gallery"
 
         className="
-          relative
-          overflow-hidden
           bg-[#29231f]
           py-20
           text-white
+
           sm:py-28
         "
       >
-        <motion.div
-          animate={{
-            x: [
-              0,
-              40,
-              0,
-            ],
-
-            y: [
-              0,
-              -30,
-              0,
-            ],
-          }}
-
-          transition={{
-            duration: 14,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-
-          className="
-            pointer-events-none
-            absolute
-            -left-32
-            top-20
-            h-[320px]
-            w-[320px]
-            rounded-full
-            bg-[#8d6655]/20
-            blur-[100px]
-          "
-        />
-
         <div
           className="
             container-main
-            relative
           "
         >
-          <motion.div
-            initial="hidden"
+          <SectionTag light>
+            Galeri Wedding
+          </SectionTag>
 
-            whileInView="show"
+          <h2
+            className="
+              font-display
+              mt-4
+              max-w-3xl
+              text-[38px]
+              font-semibold
+              leading-[1.05]
 
-            viewport={{
-              once: true,
-            }}
+              sm:text-5xl
 
-            variants={
-              stagger
-            }
+              lg:text-[54px]
+            "
           >
-            <motion.div
-              variants={
-                fadeUp
-              }
-            >
-              <SectionTag light>
-                Galeri Wedding
-              </SectionTag>
-            </motion.div>
+            Momen indah yang
+            layak untuk dikenang.
+          </h2>
 
-            <motion.h2
-              variants={
-                fadeUp
-              }
-
-              className="
-                font-display
-                mt-4
-                max-w-3xl
-                text-[38px]
-                font-semibold
-                leading-[1.05]
-
-                sm:text-5xl
-
-                lg:text-[54px]
-              "
-            >
-              Momen indah yang
-              layak untuk dikenang.
-            </motion.h2>
-
-            <motion.p
-              variants={
-                fadeUp
-              }
-
-              className="
-                mt-5
-                max-w-xl
-                text-sm
-                leading-7
-                text-white/50
-              "
-            >
-              Inspirasi suasana,
-              dekorasi dan momen
-              wedding untuk
-              menggambarkan hari
-              spesial Anda bersama
-              ABEMANA.
-            </motion.p>
-          </motion.div>
+          <p
+            className="
+              mt-5
+              max-w-xl
+              text-sm
+              leading-7
+              text-white/50
+            "
+          >
+            Inspirasi suasana,
+            dekorasi dan momen
+            wedding untuk
+            menggambarkan hari
+            spesial Anda bersama
+            ABEMANA.
+          </p>
 
           <motion.div
             initial="hidden"
@@ -2464,6 +2553,7 @@ Terima kasih.
               mt-10
               grid
               gap-3
+
               md:hidden
             "
           >
@@ -2570,6 +2660,7 @@ Terima kasih.
 
         className="
           py-20
+
           sm:py-28
         "
       >
@@ -2589,6 +2680,7 @@ Terima kasih.
           <div
             className="
               mt-10
+
               sm:hidden
             "
           >
@@ -2654,6 +2746,7 @@ Terima kasih.
         className="
           bg-[#f7f1ed]
           py-20
+
           sm:py-28
         "
       >
@@ -2787,6 +2880,7 @@ Terima kasih.
                 mt-8
                 grid
                 gap-3
+
                 sm:flex
               "
             >
@@ -2936,6 +3030,7 @@ Terima kasih.
 
         className="
           py-16
+
           sm:py-24
         "
       >
@@ -2977,7 +3072,9 @@ Terima kasih.
               bg-[#29231f]
               p-6
               text-white
+
               sm:p-8
+
               lg:p-12
             "
           >
@@ -3072,7 +3169,9 @@ Terima kasih.
           <div
             className="
               p-5
+
               sm:p-8
+
               lg:p-10
             "
           >
@@ -3114,42 +3213,57 @@ Terima kasih.
                 mt-6
                 grid
                 gap-4
+
                 sm:grid-cols-2
               "
             >
               <InputField
                 label="Nama Lengkap"
+
                 name="name"
+
                 value={
                   form.name
                 }
+
                 onChange={
                   handleChange
                 }
+
                 placeholder="Nama Anda"
+
                 required
               />
 
               <InputField
                 label="Nomor WhatsApp"
+
                 name="phone"
+
                 value={
                   form.phone
                 }
+
                 onChange={
                   handleChange
                 }
+
                 placeholder="08xxxxxxxxxx"
+
                 required
               />
 
               <InputField
                 label="Tanggal Wedding"
+
                 name="date"
+
                 type="date"
+
                 value={
                   form.date
                 }
+
                 onChange={
                   handleChange
                 }
@@ -3157,13 +3271,17 @@ Terima kasih.
 
               <InputField
                 label="Lokasi Wedding"
+
                 name="location"
+
                 value={
                   form.location
                 }
+
                 onChange={
                   handleChange
                 }
+
                 placeholder="Semarang"
               />
 
@@ -3171,6 +3289,7 @@ Terima kasih.
                 className="
                   grid
                   gap-2
+
                   sm:col-span-2
                 "
               >
@@ -3206,7 +3325,6 @@ Terima kasih.
                     transition
 
                     focus:border-[#9d7562]
-                    focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
                   "
                 >
                   <option>
@@ -3231,6 +3349,7 @@ Terima kasih.
                 className="
                   grid
                   gap-2
+
                   sm:col-span-2
                 "
               >
@@ -3271,7 +3390,6 @@ Terima kasih.
                     transition
 
                     focus:border-[#9d7562]
-                    focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
                   "
                 />
               </label>
@@ -3299,7 +3417,6 @@ Terima kasih.
                   text-sm
                   font-semibold
                   text-white
-                  shadow-lg
 
                   sm:col-span-2
                 "
@@ -3598,13 +3715,13 @@ Terima kasih.
         animate={{
           y: [
             0,
-            -5,
+            -6,
             0,
           ],
         }}
 
         transition={{
-          duration: 2.6,
+          duration: 2.5,
           repeat: Infinity,
           ease: "easeInOut",
         }}
@@ -3680,6 +3797,7 @@ Terima kasih.
 
           <MessageCircle
             size={21}
+
             className="
               relative
               z-10
@@ -3706,6 +3824,7 @@ function SectionTag({
         font-semibold
         uppercase
         tracking-[0.23em]
+
         sm:text-[9px]
 
         ${
@@ -3795,11 +3914,27 @@ function SectionHeader({
 function Statistic({
   value,
   label,
+  delay = 0,
 }) {
   return (
     <motion.div
-      whileHover={{
-        y: -3,
+      variants={
+        fadeUp
+      }
+
+      animate={{
+        y: [
+          0,
+          -3,
+          0,
+        ],
+      }}
+
+      transition={{
+        duration: 3,
+        delay,
+        repeat: Infinity,
+        ease: "easeInOut",
       }}
 
       className="
@@ -3909,13 +4044,11 @@ function ServiceCard({
       }}
 
       className="
-        group
         rounded-[26px]
         border
         border-[#e6dad3]
         bg-white
         p-6
-        transition-shadow
 
         hover:shadow-[0_18px_45px_rgba(80,55,45,0.09)]
 
@@ -4317,11 +4450,6 @@ function AllInAccordion({
                       isOpen
                         ? 180
                         : 0,
-
-                    scale:
-                      isOpen
-                        ? 1.05
-                        : 1,
                   }}
 
                   className="
@@ -4374,15 +4502,7 @@ function AllInAccordion({
                       overflow-hidden
                     "
                   >
-                    <motion.div
-                      initial="hidden"
-
-                      animate="show"
-
-                      variants={
-                        stagger
-                      }
-
+                    <div
                       className="
                         grid
                         gap-2
@@ -4391,6 +4511,7 @@ function AllInAccordion({
                         p-5
 
                         sm:grid-cols-2
+
                         lg:grid-cols-3
                       "
                     >
@@ -4403,12 +4524,14 @@ function AllInAccordion({
                               item
                             }
 
-                            variants={
-                              fadeUp
-                            }
+                            initial={{
+                              opacity: 0,
+                              y: 8,
+                            }}
 
-                            whileHover={{
-                              y: -2,
+                            animate={{
+                              opacity: 1,
+                              y: 0,
                             }}
 
                             className="
@@ -4436,7 +4559,7 @@ function AllInAccordion({
                           </motion.div>
                         )
                       )}
-                    </motion.div>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -4572,8 +4695,6 @@ function GalleryOverlay({
           from-black/70
           via-black/5
           to-transparent
-          transition-opacity
-          duration-500
         "
       />
 
@@ -4625,15 +4746,7 @@ function MobileTestimonialSlider({
   ] =
     useState(0);
 
-  const [
-    paused,
-    setPaused,
-  ] =
-    useState(false);
-
   useEffect(() => {
-    if (paused) return;
-
     const timer =
       setInterval(() => {
         setActiveIndex(
@@ -4653,28 +4766,11 @@ function MobileTestimonialSlider({
         timer
       );
   }, [
-    paused,
     testimonials.length,
   ]);
 
   return (
-    <div
-      onTouchStart={() =>
-        setPaused(
-          true
-        )
-      }
-
-      onTouchEnd={() => {
-        setTimeout(
-          () =>
-            setPaused(
-              false
-            ),
-          1800
-        );
-      }}
-    >
+    <>
       <AnimatePresence
         mode="wait"
       >
@@ -4728,20 +4824,12 @@ function MobileTestimonialSlider({
             _,
             index
           ) => (
-            <motion.button
+            <button
               key={
                 index
               }
 
               type="button"
-
-              whileTap={{
-                scale: 0.8,
-              }}
-
-              aria-label={`Testimoni ${
-                index + 1
-              }`}
 
               onClick={() =>
                 setActiveIndex(
@@ -4771,7 +4859,7 @@ function MobileTestimonialSlider({
           )
         )}
       </div>
-    </div>
+    </>
   );
 }
 
@@ -4795,24 +4883,17 @@ function TestimonialCard({
         border-[#e9ddd6]
         bg-white
         p-6
-        shadow-[0_12px_35px_rgba(70,50,40,0.04)]
 
         sm:p-8
       "
     >
-      <motion.div
-        whileHover={{
-          rotate: -8,
-          scale: 1.05,
-        }}
-      >
-        <Quote
-          size={24}
-          className="
-            text-[#ac826f]
-          "
-        />
-      </motion.div>
+      <Quote
+        size={24}
+
+        className="
+          text-[#ac826f]
+        "
+      />
 
       <div
         className="
@@ -4911,12 +4992,7 @@ function LocationItem({
         gap-4
       "
     >
-      <motion.div
-        whileHover={{
-          rotate: -5,
-          scale: 1.05,
-        }}
-
+      <div
         className="
           grid
           h-11
@@ -4931,7 +5007,7 @@ function LocationItem({
         <Icon
           size={18}
         />
-      </motion.div>
+      </div>
 
       <div>
         <p
@@ -4967,8 +5043,6 @@ function CompactContactItem({
     <motion.div
       whileHover={{
         x: 4,
-        backgroundColor:
-          "rgba(255,255,255,0.07)",
       }}
 
       className="
@@ -5062,10 +5136,7 @@ function InputField({
           outline-none
           transition
 
-          placeholder:text-[#b2a69f]
-
           focus:border-[#9d7562]
-          focus:shadow-[0_0_0_3px_rgba(157,117,98,.08)]
         "
       />
     </label>
