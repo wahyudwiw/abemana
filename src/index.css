@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Manrope", sans-serif;
+}
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+  font-family: "Manrope", sans-serif;
+
+  color: #29231f;
+  background: #fffdfa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(202, 175, 158, 0.12),
+      transparent 30%
+    ),
+    #fffdfa;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================================================
+   IMPORTANT
+   JANGAN PAKAI color: inherit PADA a
+========================================================= */
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  color: #29231f;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
+
+::selection {
+  background: #a77c68;
+  color: white;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container-main {
+  width: min(
+    1180px,
+    calc(100% - 32px)
+  );
+
+  margin-inline: auto;
+}
+
+/* =========================================================
+   FONT
+========================================================= */
+
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* =========================================================
+   GLASS EFFECT
+========================================================= */
+
+.glass {
+  background: rgba(255, 253, 250, 0.88);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* =========================================================
+   HIDE SCROLLBAR
+========================================================= */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================================================
+   GLOBAL SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6efea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b49584;
+  border-radius: 100px;
+}
+
+/* =========================================================
+   DATE
+========================================================= */
+
+input[type="date"] {
+  color-scheme: light;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .container-main {
+    width: calc(100% - 24px);
+  }
+}
